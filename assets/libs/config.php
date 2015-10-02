@@ -6,5 +6,17 @@
  * and open the template in the editor.
  */
 
-define("MAIN_SITE_TITE", "BS-DOC Template");
+
+// Directory assets files (js, css, bootstrap...)
+define("PATH_ASSETS", "./assets/");
+define("PATH_ASSETS_CSS", PATH_ASSETS."css/");
+define("PATH_ASSETS_JS", PATH_ASSETS."js/");
+
+
+// Site strings
+define("MAIN_SITE_TITLE", "BS-DOC Template");
+define("MAIN_SITE_TITLE_VERSION", "v 0.0.1");
+define("MAIN_SITE_TITLE_FA_ICON", "fa-map");
+
+
 
