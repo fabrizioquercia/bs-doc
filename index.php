@@ -127,7 +127,7 @@ include_once ('./assets/libs/config.php');
 
 					<!-- Main title -->
 					<a class="navbar-brand" href=".">
-						<i class="fa <?php echo MAIN_SITE_TITLE_FA_ICON ?>"></i>&nbsp;&nbsp;&nbsp;<?php echo MAIN_SITE_TITLE ?>
+						<i class="fa <?php echo MAIN_SITE_TITLE_FA_ICON ?>"></i>&nbsp;&nbsp;&nbsp;<?php echo MAIN_PROJECT_NAME ?>
 					</a>
 				
 				<?php if ( MAIN_SITE_TITLE_VERSION ) { ?>
@@ -242,7 +242,7 @@ include_once ('./assets/libs/config.php');
 			<div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 					<ul class="nav bs-sidenav">
 
-						<li class="main active"><a href="#mkdocs"><strong><?php echo MAIN_SITE_TITLE ?></strong></a></li>
+						<li class="main active"><a href="#mkdocs"><strong><?php echo MAIN_PROJECT_NAME ?></strong></a></li>
 
 						<li><a href="#overview">Overview</a></li>
 
@@ -279,7 +279,10 @@ include_once ('./assets/libs/config.php');
 
 
 				<h1 id="mkdocs"><?php echo MAIN_SITE_TITLE ?><a class="headerlink" href="#mkdocs" title="Permanent link"></a></h1>
-				<p>Project documentation with&nbsp;Markdown.</p>
+			<?php if ( MAIN_SITE_SUBTITLE ) { ?>
+				<p><?php echo MAIN_SITE_SUBTITLE ?></p>
+			<?php } ?>
+				
 				<hr />
 
 
@@ -398,35 +401,9 @@ about css fonts img index.html js
         <script src="<?php echo PATH_ASSETS_JS ?>bootstrap-3.0.3.min.js"></script>
         <script src="<?php echo PATH_ASSETS_JS ?>highlight.pack.js"></script>
 
-        <script>var base_url = '.';</script>
-        <script data-main="<?php echo PATH_ASSETS_JS ?>search.js" src="<?php echo PATH_ASSETS_JS ?>require.js"></script>
 
         <script src="<?php echo PATH_ASSETS_JS ?>base.js"></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
     </body>
 </html>

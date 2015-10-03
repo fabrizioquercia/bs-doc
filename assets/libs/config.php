@@ -14,7 +14,10 @@ define("PATH_ASSETS_JS", PATH_ASSETS."js/");
 
 
 // Site strings
-define("MAIN_SITE_TITLE", "BS-DOC Template");
+define("MAIN_PROJECT_NAME", "My Demo Project");
+define("MAIN_SITE_TITLE", "User Manual");
+define("MAIN_SITE_SUBTITLE", "Welcome to the ".MAIN_PROJECT_NAME. " on line user manual" );
+
 define("MAIN_SITE_TITLE_VERSION", "v 0.0.1");
 define("MAIN_SITE_TITLE_FA_ICON", "fa-map");
 
