@@ -21,5 +21,7 @@ define("MAIN_SITE_SUBTITLE", "Welcome to the ".MAIN_PROJECT_NAME. " on line user
 define("MAIN_SITE_TITLE_VERSION", "v 0.0.1");
 define("MAIN_SITE_TITLE_FA_ICON", "fa-map");
 
+define("DOC_H2_FA_ICON", "fa-book");
+
 
 
