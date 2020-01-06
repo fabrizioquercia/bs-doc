@@ -9,6 +9,10 @@
 include_once ('./assets/libs/config.php');
 include_once ('./assets/libs/main.php');
 
+// Commento di esempio per provare SOurceTree e Git
+// ... che non sembra fottersene granchè ...
+//
+
 
 ?>
 <!DOCTYPE html>
